@@ -7,3 +7,10 @@ export_presets.cfg
 # OS-specific ignores
 .DS_Store
 Thumbs.db
+
+
+#block build files
+*.zip
+*.pck
+*.exe
+
