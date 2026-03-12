@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://d0hdpdodee07h"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_bh6rb"]
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="2_urx38"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="3_a72lj"]
+
+[sub_resource type="Resource" id="Resource_bh6rb"]
+script = ExtResource("2_urx38")
+npc_name = "Wiktor"
+lines = [{
+"action": {
+"quest_desc": "Muszę wejść do szkoły i rozejrzeć się.",
+"start_quest": "Dojscie_do_szkoly"
+},
+"choices": [{
+"next_line": -1.0,
+"text": "...."
+}],
+"text": "Co tu się dzieje... przed chwilą kładłem się spać, żeby jutro wstać do pracy na PWR... orkopieństwo. A teraz jestem gdzieś indziej? Co to za ubranie na mnie? To wszystko wygląda znajomo... czuję dużą potrzebę pójścia do szkoły..."
+}]
+
+[sub_resource type="Resource" id="Resource_urx38"]
+script = ExtResource("1_bh6rb")
+dialogue = SubResource("Resource_bh6rb")
+
+[resource]
+script = ExtResource("3_a72lj")
+npc_name = "Wiktor"
+dialogues = Array[ExtResource("1_bh6rb")]([SubResource("Resource_urx38")])

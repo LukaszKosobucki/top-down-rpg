@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://djn0qm6eebncs"]
+
+[ext_resource type="Script" uid="uid://blgvmogj7dmbi" path="res://Scenes/quest_entry.gd" id="1_ywjih"]
+
+[sub_resource type="Theme" id="Theme_ywjih"]
+default_font_size = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywjih"]
+font_size = 5
+
+[node name="QuestEntry" type="VBoxContainer" unique_id=248013326]
+custom_minimum_size = Vector2(100, 50)
+script = ExtResource("1_ywjih")
+
+[node name="Button" type="Button" parent="." unique_id=1178769372]
+layout_mode = 2
+theme = SubResource("Theme_ywjih")
+
+[node name="Label" type="Label" parent="." unique_id=35732037]
+visible = false
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Opis zadania"
+label_settings = SubResource("LabelSettings_ywjih")
+autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

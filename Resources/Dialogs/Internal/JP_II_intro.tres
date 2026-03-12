@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bhkp3465jq2s8"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_2e5x5"]
+
+[resource]
+script = ExtResource("1_2e5x5")
+npc_name = "JP_II"
+lines = [{
+"choices": [{
+"next_line": 1.0,
+"text": "O BOŻE PAPIEŻAK ZŁOTY. Co ty tu robisz obok szkoły?"
+}, {
+"next_line": -1.0,
+"text": "To na pewno się nie dzieje naprawdę, idę stąd."
+}],
+"text": "NIECH BĘDZIE POCHWALONY młodzieńcu, piękny macie ten Bolesławiec! Czy w czymś Ci pomóc?"
+}, {
+"choices": [{
+"next_line": 2.0,
+"text": "No tak... Moj przyjaciel jest bardzo głodny, a widze że pracujesz dzisiaj za kasą w kremówkowni."
+}],
+"text": "Haha a co mogę robić obok szkoły? co to za naiwne pytania? PRZYSZEDŁEM MODLIĆ SIE ZA DUSZE WSZYSTKICH ZBŁĄKANYCH DUSZYCZEK"
+}, {
+"choices": [{
+"next_line": 3.0,
+"text": "Tak, daj, daj, dam Ci 300 sztuk złota!"
+}],
+"text": "Jeszcze jak! chcesz dostać kremówkę?"
+}, {
+"choices": [{
+"action": {
+"update_desc": {
+"id": "Nakarm_BESTIE",
+"value": "Muszę znaleźć dziewczynkę z warkoczykami lub bez warkoczyków żeby Papieżak mi dał kremówkę."
+},
+"update_status": {
+"id": "Nakarm_BESTIE",
+"value": "szukanie_dziewczynki"
+}
+},
+"next_line": -1.0,
+"text": "Przyjmuję to zadanie, dla Patryka je zdobędę!"
+}, {
+"next_line": -1.0,
+"text": "przemyślę to"
+}],
+"text": "HAHA Nie dla psa polaka to! Przynieś mi Dziewczynkę z warkoczykami lub bez warkoczyków a dostaniesz ode mnie krewmówkę!"
+}]

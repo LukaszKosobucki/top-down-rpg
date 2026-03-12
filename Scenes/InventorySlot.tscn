@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://llyesbwipmb7"]
+
+[ext_resource type="Script" uid="uid://cytsr5gmkw48p" path="res://Scenes/inventory_slot.gd" id="1_ia5d8"]
+
+[node name="InventorySlot" type="PanelContainer" unique_id=577073899]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -11.5
+offset_right = 8.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ia5d8")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=160045468]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=751271305]
+layout_mode = 2
+mouse_filter = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

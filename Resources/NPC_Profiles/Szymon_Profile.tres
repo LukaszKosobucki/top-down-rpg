@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://bnygxklay14io"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_xgi3n"]
+[ext_resource type="Resource" uid="uid://cfcf7dux323g3" path="res://Resources/Dialogs/Internal/Szymon_default.tres" id="2_ducav"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="3_d12t8"]
+
+[sub_resource type="Resource" id="Resource_hgt8d"]
+script = ExtResource("1_xgi3n")
+dialogue = ExtResource("2_ducav")
+
+[resource]
+script = ExtResource("3_d12t8")
+npc_name = "Szymon"
+dialogues = Array[ExtResource("1_xgi3n")]([SubResource("Resource_hgt8d")])

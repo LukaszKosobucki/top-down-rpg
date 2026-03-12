@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c8d85lk2pi51"]
+
+[ext_resource type="Script" uid="uid://dgok2d42gp057" path="res://Scenes/pickup.gd" id="1_eq05r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eq05r"]
+
+[node name="Pickup" type="Node2D" unique_id=1291987518]
+script = ExtResource("1_eq05r")
+interaction_text = "Pick up"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1516340762]
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1816404584]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1545623236]
+light_mask = 3
+visibility_layer = 3
+shape = SubResource("RectangleShape2D_eq05r")

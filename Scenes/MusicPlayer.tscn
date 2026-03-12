@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ctr4cps2xfil0"]
+
+[ext_resource type="AudioStream" uid="uid://d0u8v1sknu343" path="res://Assets/Audio/metin2-bg.mp3" id="1_5psdy"]
+[ext_resource type="Script" uid="uid://b3141amfjjebq" path="res://Scenes/music_player.gd" id="2_w8kvg"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" unique_id=1671826514]
+stream = ExtResource("1_5psdy")
+autoplay = true
+script = ExtResource("2_w8kvg")

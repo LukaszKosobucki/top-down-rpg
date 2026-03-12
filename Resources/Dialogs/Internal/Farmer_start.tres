@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dac6qlxu0sp1e"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_r3vn7"]
+
+[resource]
+script = ExtResource("1_r3vn7")
+npc_name = "Farmer"
+lines = [{
+"choices": [{
+"action": {
+"start_quest": "Apple_Quest"
+},
+"next_line": -1.0,
+"text": "Tak!"
+}],
+"text": "Pomożesz z jabłkiem?"
+}]

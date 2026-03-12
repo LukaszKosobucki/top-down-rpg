@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dr1c8ev1fvdwv"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_nu7d8"]
+
+[resource]
+script = ExtResource("1_nu7d8")
+npc_name = "Patryk"
+lines = [{
+"choices": [{
+"next_line": 1.0,
+"text": "Tak mam dla Ciebie kremówkę prosto z Wadowic jeszcze ciepła chcesz ją?"
+}],
+"text": "Uuuuxuhsbakdbsidjs WIDZĘ mchdjzusn ŻE cjdhdbsusis MASZ djdhdush DLA hxjwhshs MNIE fnjsudsu COŚ."
+}, {
+"choices": [{
+"action": {
+"add_aura": "Pomocna_Dlon",
+"complete_desc": "Uratowałeś Patryka przed śmiercią głodową. Zyskałeś potężnego sojusznika.",
+"complete_quest": "Nakarm_BESTIE",
+"remove_item": "Kremowka"
+},
+"next_line": -1.0,
+"requires": {
+"item": "Kremowka"
+},
+"text": "Trzymaj (Oddaj kremówkę)"
+}, {
+"next_line": -1.0,
+"text": "Wiesz co dzięki ale chyba sie rozmyśliłem, sam ją zjem..."
+}],
+"text": "TAAAAAJXHXBSHXHDKKKKK DAWAJ DAJ MI JĄ ZAPŁACĘ ZAPŁACE 300 SZTUK ZŁOTA ZA KAŻDE JAJO znaczy sie kremówkę"
+}]

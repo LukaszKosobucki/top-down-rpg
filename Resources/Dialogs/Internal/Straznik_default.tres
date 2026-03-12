@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dm3e3ys1firvo"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_al21w"]
+
+[resource]
+script = ExtResource("1_al21w")
+npc_name = "Straznik"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Dobrze..."
+}],
+"text": "Służba nie drużba, nie biegać!"
+}]

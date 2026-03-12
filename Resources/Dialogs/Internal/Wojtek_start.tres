@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://lac8kr2bblkf"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_yo58u"]
+
+[resource]
+script = ExtResource("1_yo58u")
+npc_name = "Wojtek"
+lines = [{
+"choices": [{
+"action": {
+"quest_desc": "Ciekawe czy i tym razem chujowo zaparkował…",
+"start_quest": "Przylap_Szweda_na_goracym_uczynku"
+},
+"next_line": 2.0,
+"text": "No dobra, o co chodzi?"
+}, {
+"next_line": 1.0,
+"text": "Pal gumsona łysy."
+}],
+"text": "O nie! Zaraz minie 24h od postu! O siema Wiktor! Masz chwilę? Przydałaby mi się twoja pomoc."
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "..."
+}],
+"text": "O dobra, dzięki, ty też pal gumę. Essa!"
+}, {
+"choices": [{
+"next_line": 3.0,
+"requires": {
+"item": "Zdjecie"
+},
+"text": "Tak się składa, że mam je! Patrz na to!"
+}, {
+"next_line": -1.0,
+"text": "Pewnie już się za to biorę."
+}],
+"text": "Szwedzik pewnie znowu chujowo zaparkował. Zdobądź dla mnie zdjęcie jego auta."
+}, {
+"choices": [{
+"action": {
+"add_aura": "blogoslawienstwo_wojtka",
+"add_item": "res://Resources/Items/Talon.tres",
+"complete_desc": "Wciąż mnie to zadziwia że można tak źle parkować, może mu brakuje czegoś więcej niż palców.",
+"complete_quest": "Przylap_Szweda_na_goracym_uczynku",
+"remove_item": "Zdjecie"
+},
+"next_line": -1.0,
+"text": "[Akceptuj]"
+}],
+"text": "Hahahahahaha, idealnie! [Za pomoc otrzymujesz Talon i aurę]"
+}]

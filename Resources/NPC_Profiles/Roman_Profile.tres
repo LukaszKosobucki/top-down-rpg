@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://ggkeluwv07iy"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_853l7"]
+[ext_resource type="Resource" uid="uid://wtmoupiuxvlm" path="res://Resources/Dialogs/Internal/Roman_start.tres" id="2_woswa"]
+[ext_resource type="Resource" uid="uid://c0vj5kh02b3g1" path="res://Resources/Dialogs/Internal/Roman_after_quest.tres" id="3_pv212"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="4_66263"]
+
+[sub_resource type="Resource" id="Resource_853l7"]
+script = ExtResource("1_853l7")
+dialogue = ExtResource("2_woswa")
+
+[sub_resource type="Resource" id="Resource_woswa"]
+script = ExtResource("1_853l7")
+dialogue = ExtResource("3_pv212")
+required_quest = "Eksperyment_Romana"
+required_status = "completed"
+
+[resource]
+script = ExtResource("4_66263")
+npc_name = "Roman"
+dialogues = Array[ExtResource("1_853l7")]([SubResource("Resource_853l7"), SubResource("Resource_woswa")])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://c82ieshtmnhau"]
+
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_3wcsc"]
+[ext_resource type="Texture2D" uid="uid://bc0d7otn54xhj" path="res://Characters/Gemini_Generated_Image_ur8x88ur8x88ur8x.png" id="1_jrmrd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3t7qq"]
+atlas = ExtResource("1_jrmrd")
+region = Rect2(967.4894, 230.65393, 865.8302, 1241.7828)
+
+[resource]
+script = ExtResource("1_3wcsc")
+item_name = "Dziewczynka"
+description = "dziewczyna z warkoczykami"
+icon = SubResource("AtlasTexture_3t7qq")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

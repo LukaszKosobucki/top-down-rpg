@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dt3dqaxrr1ws6"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_n1j3q"]
+
+[resource]
+script = ExtResource("1_n1j3q")
+npc_name = "Patryk"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "jeszcze nie... Daj mi chwilę."
+}],
+"text": "Patryk: I co JESTEŚ GOTOWY NAKARMIĆ BESTIE? Czy załatwiłeś mi już GIGATURBO ZASMERFASTYCZNE CIASTKO 5000 od sam wiesz kogo? Nie?, w takim razie nie mam siły z Tobą gadać naraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}]

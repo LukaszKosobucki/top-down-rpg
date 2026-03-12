@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://qkhyvnmc5rhc"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_hyld0"]
+[ext_resource type="Resource" uid="uid://bhkp3465jq2s8" path="res://Resources/Dialogs/Internal/JP_II_intro.tres" id="2_jl33q"]
+[ext_resource type="Resource" uid="uid://d3v25ph1mukdq" path="res://Resources/Dialogs/Internal/JP_II_default.tres" id="2_mn2vv"]
+[ext_resource type="Resource" uid="uid://dgqprxb3qenta" path="res://Resources/Dialogs/Internal/JP_II_waiting_item.tres" id="3_mn2vv"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="4_gwi6h"]
+
+[sub_resource type="Resource" id="Resource_jl33q"]
+script = ExtResource("1_hyld0")
+dialogue = ExtResource("2_mn2vv")
+
+[sub_resource type="Resource" id="Resource_mn2vv"]
+script = ExtResource("1_hyld0")
+dialogue = ExtResource("2_jl33q")
+required_quest = "Nakarm_BESTIE"
+required_status = "started"
+
+[sub_resource type="Resource" id="Resource_gwi6h"]
+script = ExtResource("1_hyld0")
+dialogue = ExtResource("3_mn2vv")
+required_quest = "Nakarm_BESTIE"
+required_status = "szukanie_dziewczynki"
+
+[resource]
+script = ExtResource("4_gwi6h")
+npc_name = "JP_II"
+dialogues = Array[ExtResource("1_hyld0")]([SubResource("Resource_jl33q"), SubResource("Resource_mn2vv"), SubResource("Resource_gwi6h")])

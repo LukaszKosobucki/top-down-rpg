@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dd1ivnrdbb02f"]
+
+[ext_resource type="Texture2D" uid="uid://cx1x1pjf2gss2" path="res://Assets/Tiles/Objects/ETp6mxiX0AEwFzy.jpg" id="1_jegfm"]
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_r27ja"]
+
+[resource]
+script = ExtResource("1_r27ja")
+item_name = "Talon na kurwę i balon"
+description = "Muszę zapierdalać póki ważny. [+20% szybkości ruchu]"
+icon = ExtResource("1_jegfm")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

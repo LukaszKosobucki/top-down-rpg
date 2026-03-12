@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bt4557r2bepwa"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_u2acl"]
+
+[resource]
+script = ExtResource("1_u2acl")
+npc_name = "Patryk"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Już idę!"
+}],
+"text": "Szybciej Wiktor! Smerfuj po to ciastko, moje cząsteczki zaczynają wibrować z głodu!"
+}]

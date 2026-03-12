@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://csj670vpkicmt"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_euxhg"]
+
+[resource]
+script = ExtResource("1_euxhg")
+npc_name = "Łukasz"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Pajac..."
+}],
+"text": "No gdzie ta łódź podwona, muszę się dostać do piekarni po chałkę, znowu się spóźnię Kurwica."
+}]

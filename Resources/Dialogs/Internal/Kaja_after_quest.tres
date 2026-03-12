@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dfxdgrt11r0jk"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_lmm1x"]
+
+[resource]
+script = ExtResource("1_lmm1x")
+npc_name = "Kaja"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Essa…"
+}],
+"text": "Do zobaczenia po szkole Wiiiiiktoooorkuuuuu."
+}]

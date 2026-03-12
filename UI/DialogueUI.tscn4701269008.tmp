@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cds07kgrdvly4"]
+
+[ext_resource type="Script" uid="uid://bj2x0fl0ry4j0" path="res://UI/dialogue_ui.gd" id="1_s2htl"]
+
+[node name="DialogueUi" type="CanvasLayer" unique_id=163797747]
+visible = false
+script = ExtResource("1_s2htl")
+
+[node name="Panel" type="Panel" parent="." unique_id=1983285818 groups=["dialogue_ui"]]
+offset_left = 123.0
+offset_top = 225.0
+offset_right = 336.0
+offset_bottom = 259.0
+
+[node name="NPCName" type="Label" parent="Panel" unique_id=211145797]
+layout_mode = 0
+offset_right = 212.0
+offset_bottom = 23.0
+
+[node name="DialogueText" type="Label" parent="Panel" unique_id=2035765501]
+layout_mode = 0
+offset_right = 212.0
+offset_bottom = 23.0
+
+[node name="Button" type="Button" parent="Panel" unique_id=2065550188]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 16.0
+offset_right = 161.0
+offset_bottom = 47.0
+text = "kontynuuj"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

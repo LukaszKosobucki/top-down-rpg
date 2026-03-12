@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://ct1espp55m4aa"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_mvto7"]
+
+[resource]
+script = ExtResource("1_mvto7")
+npc_name = "Wszyscy"
+lines = [{
+"choices": [{
+"next_line": 1,
+"text": "Dalej..."
+}],
+"text": "Wszyscy: ♪ Sto lat, sto lat, niech żyje, żyje nam! ♪"
+}, {
+"choices": [{
+"next_line": 2,
+"text": "Dalej..."
+}],
+"text": "Wszyscy: ♪ Sto lat, sto lat, niech żyje, żyje nam! ♪"
+}, {
+"choices": [{
+"next_line": 3,
+"text": "Dalej..."
+}],
+"text": "Wszyscy: ♪ Jeszcze raz, jeszcze raz, niech żyje, żyje nam! ♪"
+}, {
+"choices": [{
+"action": {
+"change_scene": "res://Scenes/Credits.tscn"
+},
+"next_line": -1,
+"text": "Zakończ sen"
+}],
+"text": "To był piękny sen, i piękne czasy, ale czas wrócić do równie pięknej rzeczywistości."
+}]

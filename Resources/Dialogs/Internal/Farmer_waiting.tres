@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bp8o2twxbp8ta"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_c4o74"]
+
+[resource]
+script = ExtResource("1_c4o74")
+npc_name = "Farmer"
+lines = [{
+"choices": [{
+"action": {
+"complete_desc": "Oddałeś jabłko farmerowi. Był niezwykle wdzięczny i obiecał cię nakarmić!",
+"complete_quest": "Apple_Quest",
+"remove_item": "Apple"
+},
+"requires": {
+"item": "Apple"
+},
+"text": "Tak, proszę!"
+}, {
+"next_line": -1.0,
+"text": "Nadal szukam..."
+}],
+"text": "Masz moje jabłko?"
+}]

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://g81ej812helu"]
+
+[ext_resource type="Script" uid="uid://cvs7nctlscjip" path="res://Scenes/item_info.gd" id="1_pqv47"]
+
+[sub_resource type="Theme" id="Theme_pqv47"]
+default_font_size = 5
+
+[sub_resource type="Theme" id="Theme_yjy3t"]
+default_font_size = 5
+
+[node name="ItemInfoWindow" type="PanelContainer" unique_id=1868027359]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.5
+offset_top = -29.0
+offset_right = 2.5
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pqv47")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1498917674]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1137086872]
+layout_mode = 2
+
+[node name="InfoIcon" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=279518734]
+clip_contents = true
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+expand_mode = 1
+
+[node name="InfoName" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1516104065]
+layout_mode = 2
+theme = SubResource("Theme_pqv47")
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=748053782]
+layout_mode = 2
+
+[node name="InfoDescription" type="Label" parent="VBoxContainer" unique_id=661575785]
+layout_mode = 2
+theme = SubResource("Theme_yjy3t")

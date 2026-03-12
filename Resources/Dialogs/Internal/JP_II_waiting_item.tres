@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dgqprxb3qenta"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_5s2ta"]
+
+[resource]
+script = ExtResource("1_5s2ta")
+npc_name = "JP_II"
+lines = [{
+"choices": [{
+"action": {
+"add_item": "res://Resources/Items/Kremowka.tres",
+"count": 1.0,
+"remove_item": "Dziewczynka",
+"update_desc": {
+"id": "Nakarm_BESTIE",
+"value": "Zdobyłeś Kremówkę dla Patryka. Śpiesz sie żeby go nakarmić!"
+},
+"update_status": {
+"id": "Nakarm_BESTIE",
+"value": "kremowka_zdobyta"
+}
+},
+"next_line": -1.0,
+"requires": {
+"count": 1.0,
+"item": "Dziewczynka"
+},
+"text": "mam! proszę o to dziewczynkę z warkoczykami lub bez warkoczyków"
+}, {
+"next_line": -1.0,
+"text": "jeszcze nie.... Idę dalej szukać."
+}],
+"text": "I co uczniaku? masz już dla mnie Dziewczynkę z warkoczykami lub bez warkoczyków?"
+}]

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://bumecle5nfq1b"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_udnh7"]
+[ext_resource type="Resource" uid="uid://2xmoyqflygy4" path="res://Resources/Dialogs/Internal/Szwed_default.tres" id="2_m2ac6"]
+[ext_resource type="Resource" uid="uid://ddwmf0uftr8jo" path="res://Resources/Dialogs/Internal/Szwed_after_photo.tres" id="3_xddsx"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="4_ldvc1"]
+
+[sub_resource type="Resource" id="Resource_udnh7"]
+script = ExtResource("1_udnh7")
+dialogue = ExtResource("2_m2ac6")
+
+[sub_resource type="Resource" id="Resource_m2ac6"]
+script = ExtResource("1_udnh7")
+dialogue = ExtResource("3_xddsx")
+required_flag = "zrobiono_zdjecie_szweda"
+
+[resource]
+script = ExtResource("4_ldvc1")
+npc_name = "Szwed"
+dialogues = Array[ExtResource("1_udnh7")]([SubResource("Resource_udnh7"), SubResource("Resource_m2ac6")])

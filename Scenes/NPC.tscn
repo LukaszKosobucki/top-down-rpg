@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dqp31hk440mnt"]
+
+[ext_resource type="Script" uid="uid://cy7xtn82nu0cb" path="res://Scenes/npc.gd" id="1_tdvfm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xs5w8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fo5tq"]
+size = Vector2(17, 24)
+
+[sub_resource type="Theme" id="Theme_tdvfm"]
+default_font_size = 5
+
+[node name="Npc" type="CharacterBody2D" unique_id=1892376723]
+script = ExtResource("1_tdvfm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=54491617]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=625793468]
+shape = SubResource("RectangleShape2D_xs5w8")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1353228882]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1785025569]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_fo5tq")
+
+[node name="NameLabel" type="Label" parent="." unique_id=805281658]
+offset_right = 40.0
+offset_bottom = 23.0
+theme = SubResource("Theme_tdvfm")

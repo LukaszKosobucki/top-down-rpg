@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dxbwrtocer64v"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_2p10o"]
+
+[resource]
+script = ExtResource("1_2p10o")
+npc_name = "Piotr"
+lines = [{
+"action": {
+"play_music": "piotr"
+},
+"choices": [{
+"next_line": 1.0,
+"text": "Spokojnie Piotr, to tylko gra..."
+}],
+"text": "[JEB JEB JEB] Koleś ma prep, prep, vanish, vanish, dzik, cofnięcie, cofnięcie, cofnięcie, cofnięcie, cofnięcie dwadzieścia kart do wyciągnięcia. DWADZIEŚCIA K*RWA KART! PO CH*J JEST TAM DWADZIEŚCIA KART JAK TY MASZ DZIESIĘĆ I WYGRYWASZ GRĘ W CZWARTEJ TURZE K*RWA STO RAZY NA STO RAZY?!"
+}, {
+"choices": [{
+"next_line": 2.0,
+"text": "Piotr, ręka Ci krwawi..."
+}],
+"text": "CZY KOGOŚ POJEBAŁO TUTAJ? TO JEST OSZUSTWO JA DWA DO JEDEN PRZEGRYWAM ALBO WYGRYWAM DWADZIEŚCIA K*RWA GIER Z RZĘDU, NO NIE MOGĘ PO PROSTU! Ja K*RWA nie mam czasu grać na gościa który rogalem wygrywa w czwartej turze k*rwa?! Przez k*rwa jedyne dziesięć kart w decku na sto do wyciągnięcia?!"
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "Pal gumę, essa."
+}],
+"text": "Ała k*rwa rzeczywiście, Nastał nie rozpraszaj mnie! Nie widzisz że legendę tutaj wbijam?!"
+}]

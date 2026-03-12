@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cjx0xpc6abagl"]
+
+[ext_resource type="Texture2D" uid="uid://cx154flbonutb" path="res://Assets/Tiles/Objects/zdjecie.png" id="1_5icb7"]
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_o1vx5"]
+
+[resource]
+script = ExtResource("1_o1vx5")
+item_name = "Zdjecie"
+description = "Zaparkował tak samo chujowo jak zawsze, trzeba wrzucić na fanpage."
+icon = ExtResource("1_5icb7")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

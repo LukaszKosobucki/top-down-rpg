@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dvkgmnx5f20q6"]
+
+[ext_resource type="Texture2D" uid="uid://b8hn0u67mpdwh" path="res://Assets/Tiles/Objects/Gemini_Generated_Image_8j9r2q8j9r2q8j9r.png" id="1_gs3nw"]
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_j1lef"]
+
+[resource]
+script = ExtResource("1_j1lef")
+item_name = "Kremowka"
+description = "Kremówka... MMM jaka pyszniutka, Lepiej oddam ją Patrykowi zanim sam ją zjem."
+icon = ExtResource("1_gs3nw")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

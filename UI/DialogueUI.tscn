@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cds07kgrdvly4"]
+
+[ext_resource type="Script" uid="uid://bj2x0fl0ry4j0" path="res://UI/dialogue_ui.gd" id="1_s2htl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s2htl"]
+font_size = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_odgyn"]
+font_size = 5
+
+[node name="DialogueUi" type="CanvasLayer" unique_id=163797747]
+layer = 2
+visible = false
+script = ExtResource("1_s2htl")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1475421494]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="VBoxContainer" parent="PanelContainer" unique_id=645678809 groups=["dialogue_ui"]]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NPCName" type="Label" parent="PanelContainer/Panel" unique_id=211145797]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_s2htl")
+
+[node name="DialogueText" type="Label" parent="PanelContainer/Panel" unique_id=2035765501]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_odgyn")
+autowrap_mode = 2
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="PanelContainer/Panel" unique_id=1207820793]
+clip_contents = true
+layout_mode = 2
+
+[node name="FadeOverlay" type="ColorRect" parent="." unique_id=575635543]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

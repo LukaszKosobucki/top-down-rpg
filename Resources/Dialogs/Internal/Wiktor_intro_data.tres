@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://6i1807gsb8hx"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_1hoix"]
+
+[resource]
+script = ExtResource("1_1hoix")
+npc_name = "Wiktor"
+lines = [{
+"action": {
+"quest_desc": "Muszę wejść do szkoły i rozejrzeć się.",
+"start_quest": "Dojscie_do_szkoly"
+},
+"choices": [{
+"next_line": -1.0,
+"text": "...."
+}],
+"text": "Co tu się dzieje... przed chwilą kładłem się spać, żeby jutro wstać do pracy na PWR... orkopieństwo. A teraz jestem gdzieś indziej? Co to za ubranie na mnie? To wszystko wygląda znajomo... czuję dużą potrzebę pójścia do szkoły..."
+}]

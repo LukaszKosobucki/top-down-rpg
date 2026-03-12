@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://cp7173i2b6gjn"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_l78bg"]
+
+[resource]
+script = ExtResource("1_l78bg")
+npc_name = "Patryk"
+lines = [{
+"choices": [{
+"next_line": 1.0,
+"text": "Tak mam dla Ciebie kremówkę prosto z Wadowic jeszcze ciepła chcesz ją?"
+}],
+"text": "Uuuuxuhsbakdbsidjs WIDZĘ mchdjzusn ŻE cjdhdbsusis MASZ djdhdush DLA hxjwhshs MNIE fnjsudsu COŚ."
+}, {
+"choices": [{
+"next_line": 2.0,
+"requires": {
+"item": "Kremowka"
+},
+"text": "Trzymaj (Oddaj kremówkę)"
+}, {
+"next_line": -1.0,
+"text": "wiesz co dzięki ale chyba sie rozmyśliłem, sam ją zjem zachowaj swoje złoto i idź poszukaj Martyny."
+}],
+"text": "TAAAAAJXHXBSHXHDKKKKK DAWAJ DAJ MI JĄ ZAPŁACĘ ZAPŁACE 300 SZTUK ZŁOTA ZA KAŻDE JAJO znaczy sie kremówkę"
+}, {
+"choices": [{
+"action": {
+"add_aura": "Pomocna_Dlon",
+"complete_desc": "Dostałeś aurę Pomocna Dłoń - Patryk przybędzie Ci na ratunek!",
+"complete_quest": "Nakarm_BESTIE",
+"remove_item": "Kremowka"
+},
+"next_line": -1.0,
+"text": "[akceptuj]"
+}],
+"text": "[otrzymujesz w nagrodę aurę pomocna dłoń, twoja predkość ruchu rośnie o 50%]"
+}]

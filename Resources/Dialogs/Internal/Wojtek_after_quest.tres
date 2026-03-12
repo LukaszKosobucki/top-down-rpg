@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://c8trr8tkohbrm"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_uj3wn"]
+
+[resource]
+script = ExtResource("1_uj3wn")
+npc_name = "Wojtek"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Essa."
+}],
+"text": "[klik klik] Nie przeszkadzaj mi teraz, dodaję post. Pal gumę."
+}]

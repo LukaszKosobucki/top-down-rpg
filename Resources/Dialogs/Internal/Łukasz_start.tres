@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bkgudfc5c4pv0"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_qb0qk"]
+
+[resource]
+script = ExtResource("1_qb0qk")
+npc_name = "Łukasz"
+lines = [{
+"choices": [{
+"next_line": 2.0,
+"text": "Pewnie."
+}, {
+"next_line": 1.0,
+"text": "Pal gumę."
+}],
+"text": "Tym razem na pewno zdąże na Pierwszą lekcję! O nie! zapomniałem śniadania! Wzywam łódź podwodną! O cześć Wiktor! Nastał na Ciebie czas! Mógłbyś ode mnie przekazać Mariuszkowi że mogę się spóźnić na lekcje? Na pewno zrozumie. W końcu daleko mieszkam"
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "..."
+}],
+"text": "Pal gumę nastałson."
+}, {
+"choices": [{
+"action": {
+"quest_desc": "Znajdź i pogadaj z Kają",
+"start_quest": "Terapia_reunited"
+},
+"next_line": -1.0,
+"text": "Bardzo dobry pomysł, już lecę, tylko się nie spóźnij pajacu!"
+}, {
+"next_line": -1.0,
+"text": "BOŻE, znowu z tobą w grupie… nie dzięki."
+}],
+"text": "Super jesteś Wiktor dzięki! W ogóle dzisiaj mamy pracę w grupach na fizyce, może usiądziemy razem terapią? Tylko wszyscy chorzy poza Wolską, pójdziesz spytać się jej czy by chciała terapiowo usiąść?"
+}]

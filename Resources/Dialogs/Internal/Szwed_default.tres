@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://2xmoyqflygy4"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_rv3my"]
+
+[resource]
+script = ExtResource("1_rv3my")
+npc_name = "Szwed"
+lines = [{
+"choices": [{
+"action": {
+"add_item": "res://Resources/Items/Zdjecie.tres",
+"give_flag": "zrobiono_zdjecie_szweda"
+},
+"next_line": 1.0,
+"text": "... [zrób zdjęcie jak chujowo zaparkował]"
+}],
+"text": "Mmmm, tak, mmmm, szwedzkie sposoby parkowania, taaaaak."
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "Bywaj."
+}],
+"text": "*Klik!* Aparat uwiecznił ten kunszt parkowania. Szwed zdaje się tego nie zauważać, dalej podziwiając linię krawężnika."
+}]

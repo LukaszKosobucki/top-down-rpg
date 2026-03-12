@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bpmtkrs0t7x41"]
+
+[ext_resource type="Script" uid="uid://d0jenug5hailp" path="res://Scenes/credits.gd" id="1_i8h6y"]
+
+[sub_resource type="Theme" id="Theme_i8h6y"]
+
+[node name="Credits" type="Control" unique_id=1539920242]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i8h6y")
+credits_text = "Kiedyś to było, ale teraz wcale nie jest gorzej!
+
+Wystąpili:
+
+Patryk Zielonka
+
+Roman Durda
+
+Wojtek Jakieła
+
+Piotr Dubina
+
+Łukasz Kosobucki
+
+Wszystkiego dobrego z okazji urodzin.
+
+Koxem jesteś nie zmieniaj się nigdy, 
+
+chyba że na lepsze"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=666015117]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_i8h6y")
+color = Color(0, 0, 0, 1)
+
+[node name="CreditsLabel" type="Label" parent="." unique_id=888460605]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="QuitButton" type="Button" parent="." unique_id=257561202]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

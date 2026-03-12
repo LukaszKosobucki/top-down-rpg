@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://pophnoab751c"]
+
+[ext_resource type="Script" uid="uid://bx00s48tg358x" path="res://UI/interaction_prompt.gd" id="1_o35up"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rfx2n"]
+font_size = 6
+
+[node name="InteractionPrompt" type="CanvasLayer" unique_id=1298226873]
+script = ExtResource("1_o35up")
+
+[node name="Label" type="Label" parent="." unique_id=1128724346]
+offset_left = 223.0
+offset_top = 116.0
+offset_right = 231.0
+offset_bottom = 125.0
+text = "[E]"
+label_settings = SubResource("LabelSettings_rfx2n")
+horizontal_alignment = 1
+vertical_alignment = 1

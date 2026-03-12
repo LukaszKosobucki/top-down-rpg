@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c5xaudjj70cqr"]
+
+[ext_resource type="Script" uid="uid://btrh7e6ldhasr" path="res://Scenes/notification_ui.gd" id="1_lmsrg"]
+
+[node name="NotificationUi" type="CanvasLayer" unique_id=72942915]
+script = ExtResource("1_lmsrg")
+
+[node name="NotificationContainer" type="Control" parent="." unique_id=178345472]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="NotificationContainer" unique_id=63623630]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="MessageLabel" type="Label" parent="NotificationContainer/PanelContainer" unique_id=68247938]
+layout_mode = 2

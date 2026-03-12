@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://b80nvnewg6hke"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_d0ddl"]
+
+[resource]
+script = ExtResource("1_d0ddl")
+npc_name = "Szymon"
+lines = [{
+"choices": [{
+"next_line": 1,
+"text": "Tak no idzie idzie"
+}, {
+"next_line": -1,
+"text": "Bywaj"
+}],
+"text": "Cześć Wiktor, co do szkoły się idzie?"
+}, {
+"choices": [{
+"next_line": -1,
+"text": "Bywaj"
+}],
+"text": "To do zobaczenia w szkole, ja tutaj jeszcze czekam na Tomka"
+}]

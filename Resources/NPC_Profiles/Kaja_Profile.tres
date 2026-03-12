@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://duetv1snkk8qw"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_uibqg"]
+[ext_resource type="Resource" uid="uid://djpwjaxxrxfjg" path="res://Resources/Dialogs/Internal/Kaja_default.tres" id="2_517g5"]
+[ext_resource type="Resource" uid="uid://b43j4ek0cuxew" path="res://Resources/Dialogs/Internal/Kaja_quest_active.tres" id="3_rox0l"]
+[ext_resource type="Resource" uid="uid://dfxdgrt11r0jk" path="res://Resources/Dialogs/Internal/Kaja_after_quest.tres" id="4_l3565"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="5_ba80d"]
+
+[sub_resource type="Resource" id="Resource_pqt3u"]
+script = ExtResource("1_uibqg")
+dialogue = ExtResource("2_517g5")
+
+[sub_resource type="Resource" id="Resource_qqtiw"]
+script = ExtResource("1_uibqg")
+dialogue = ExtResource("3_rox0l")
+required_quest = "Terapia_reunited"
+required_status = "started"
+
+[sub_resource type="Resource" id="Resource_hsnkt"]
+script = ExtResource("1_uibqg")
+dialogue = ExtResource("4_l3565")
+required_quest = "Terapia_reunited"
+required_status = "completed"
+
+[resource]
+script = ExtResource("5_ba80d")
+npc_name = "Kaja"
+dialogues = Array[ExtResource("1_uibqg")]([SubResource("Resource_pqt3u"), SubResource("Resource_qqtiw"), SubResource("Resource_hsnkt")])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://b18iif21vrprd"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_cc8lh"]
+[ext_resource type="Resource" uid="uid://dxbwrtocer64v" path="res://Resources/Dialogs/Internal/Piotr_rage_intro.tres" id="2_q8tph"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="3_3tq25"]
+
+[sub_resource type="Resource" id="Resource_cc8lh"]
+script = ExtResource("1_cc8lh")
+dialogue = ExtResource("2_q8tph")
+
+[resource]
+script = ExtResource("3_3tq25")
+npc_name = "Piotr"
+dialogues = Array[ExtResource("1_cc8lh")]([SubResource("Resource_cc8lh")])

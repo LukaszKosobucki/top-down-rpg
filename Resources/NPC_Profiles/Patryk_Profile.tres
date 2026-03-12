@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://bo08yswghw8tl"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_4qgse"]
+[ext_resource type="Resource" uid="uid://b3l7nbyd4yeb7" path="res://Resources/Dialogs/Internal/Patryk_start.tres" id="2_a6jp4"]
+[ext_resource type="Resource" uid="uid://dt3dqaxrr1ws6" path="res://Resources/Dialogs/Internal/Patryk_waiting.tres" id="3_a7nn6"]
+[ext_resource type="Resource" uid="uid://clm5vby3dccqd" path="res://Resources/Dialogs/Internal/Patryk_waiting_alt.tres" id="4_4qgse"]
+[ext_resource type="Resource" uid="uid://cp7173i2b6gjn" path="res://Resources/Dialogs/Internal/Patryk_hand_in.tres" id="5_a6jp4"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="5_atvqn"]
+[ext_resource type="Resource" uid="uid://dkhhwnqxxs005" path="res://Resources/Dialogs/Internal/Patryk_finished.tres" id="6_a7nn6"]
+
+[sub_resource type="Resource" id="Resource_a7nn6"]
+script = ExtResource("1_4qgse")
+dialogue = ExtResource("2_a6jp4")
+
+[sub_resource type="Resource" id="Resource_n2slg"]
+script = ExtResource("1_4qgse")
+dialogue = ExtResource("3_a7nn6")
+required_quest = "Nakarm_BESTIE"
+required_status = "started"
+
+[sub_resource type="Resource" id="Resource_atvqn"]
+script = ExtResource("1_4qgse")
+dialogue = ExtResource("4_4qgse")
+required_quest = "Nakarm_BESTIE"
+required_status = "szukanie_dziewczynki"
+
+[sub_resource type="Resource" id="Resource_2323a"]
+script = ExtResource("1_4qgse")
+dialogue = ExtResource("5_a6jp4")
+required_quest = "Nakarm_BESTIE"
+required_status = "kremowka_zdobyta"
+
+[sub_resource type="Resource" id="Resource_xl7nq"]
+script = ExtResource("1_4qgse")
+dialogue = ExtResource("6_a7nn6")
+required_quest = "Nakarm_BESTIE"
+required_status = "completed"
+
+[resource]
+script = ExtResource("5_atvqn")
+npc_name = "Patryk"
+dialogues = Array[ExtResource("1_4qgse")]([SubResource("Resource_a7nn6"), SubResource("Resource_n2slg"), SubResource("Resource_atvqn"), SubResource("Resource_2323a"), SubResource("Resource_xl7nq")])

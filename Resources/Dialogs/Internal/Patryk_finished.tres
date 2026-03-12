@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dkhhwnqxxs005"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_5vpj5"]
+
+[resource]
+script = ExtResource("1_5vpj5")
+npc_name = "Patryk"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Smakuwa!"
+}],
+"text": "OBOŻE ALE TO BYŁA DOBRA KREMÓWKA OMNOMNOMNOM"
+}]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dssta8e2800b2"]
+
+[ext_resource type="Texture2D" uid="uid://fq3chu27ml24" path="res://Assets/Tiles/Objects/numer.jpg" id="1_auqdw"]
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_b1p38"]
+
+[resource]
+script = ExtResource("1_b1p38")
+item_name = "Numer"
+description = "Dziwny ma ten numer... Ciekawe co takiego będzie chciała nagrywać na youtube..."
+icon = ExtResource("1_auqdw")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

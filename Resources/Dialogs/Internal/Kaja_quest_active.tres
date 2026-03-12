@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://b43j4ek0cuxew"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_6l3ff"]
+
+[resource]
+script = ExtResource("1_6l3ff")
+npc_name = "Kaja"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "idę do szkoły, mogłabyś w końcu przestać cmolić te faje…"
+}, {
+"next_line": 1.0,
+"text": "Gadałem z Bucem, mówił że dzisiaj praca w grupach na fizyce, siadamy grupowo terapią?"
+}],
+"text": "[Pali fajkę] Cześć Wiktor! Co dzisiaj robisz?"
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "Jak wywietrzejesz z fajek to tak…"
+}, {
+"next_line": 2.0,
+"text": "Nomć."
+}],
+"text": "OOO ale super pomysł! Mogę usiąść obok Ciebie?"
+}, {
+"choices": [{
+"next_line": 3.0,
+"text": "W sumie i tak nie mam co robić, pewnie."
+}],
+"text": "Aleee suuper jesteś Wiiiiktor, podobał mi się twój ostatni filmik na yt, sama ostatnio myślałem żeby spróbować założyć swo kanał wiesz? Pomógłbyś mi po szkolę z tym?"
+}, {
+"choices": [{
+"action": {
+"add_item": "res://Resources/Items/Numer.tres",
+"complete_desc": "Kaja dzisiaj była dla mnie wyjątkowo miła, ciekawe co to może oznaczać… can’t really tell",
+"complete_quest": "Terapia_reunited"
+},
+"next_line": -1.0,
+"text": "Dobra, dzięki"
+}],
+"text": "Jesteś najlepszy Wiktor! Masz tutaj mój numer telefonu! Zadzwoń jak będziesz pod moją klatką to ci otworzę."
+}]

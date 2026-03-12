@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://d2b4hfsst2par"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_2sq4r"]
+
+[resource]
+script = ExtResource("1_2sq4r")
+npc_name = "Wojtek"
+lines = [{
+"choices": [{
+"next_line": 1.0,
+"requires": {
+"item": "Zdjecie"
+},
+"text": "Nie uwierzysz! Mam je!"
+}, {
+"next_line": 2.0,
+"text": "jeszcze nie..."
+}],
+"text": "I co udało Ci się zdobyć zdjęcie?"
+}, {
+"choices": [{
+"action": {
+"add_aura": "blogoslawienstwo_wojtka",
+"add_item": "res://Resources/Items/Talon.tres",
+"complete_desc": "Wciąż mnie to zadziwia że można tak źle parkować, może mu brakuje czegoś więcej niż palców.",
+"complete_quest": "Przylap_Szweda_na_goracym_uczynku",
+"remove_item": "Zdjecie"
+},
+"next_line": -1.0,
+"text": "[Akceptuj]"
+}],
+"text": "Hahahahahaha, idealnie! [Za pomoc otrzymujesz Talon i aurę]"
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "Essa!"
+}],
+"text": "Pal gumę i rób to zdjęcie!"
+}]

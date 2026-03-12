@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NPCProfile" format=3 uid="uid://bo6u6inb0vhcc"]
+
+[ext_resource type="Script" uid="uid://d03icgsmh67m2" path="res://NPCDialogueEntry.gd" id="1_dd35i"]
+[ext_resource type="Resource" uid="uid://lac8kr2bblkf" path="res://Resources/Dialogs/Internal/Wojtek_start.tres" id="2_tbdkn"]
+[ext_resource type="Resource" uid="uid://d2b4hfsst2par" path="res://Resources/Dialogs/Internal/Wojtek_waiting.tres" id="3_sd0ms"]
+[ext_resource type="Resource" uid="uid://c8trr8tkohbrm" path="res://Resources/Dialogs/Internal/Wojtek_after_quest.tres" id="4_fva7p"]
+[ext_resource type="Script" uid="uid://ctw7tcfp02ytg" path="res://NPCProfile.gd" id="5_g4sn7"]
+
+[sub_resource type="Resource" id="Resource_dd35i"]
+script = ExtResource("1_dd35i")
+dialogue = ExtResource("2_tbdkn")
+
+[sub_resource type="Resource" id="Resource_tbdkn"]
+script = ExtResource("1_dd35i")
+dialogue = ExtResource("3_sd0ms")
+required_quest = "Przylap_Szweda_na_goracym_uczynku"
+required_status = "started"
+
+[sub_resource type="Resource" id="Resource_sd0ms"]
+script = ExtResource("1_dd35i")
+dialogue = ExtResource("4_fva7p")
+required_quest = "Przylap_Szweda_na_goracym_uczynku"
+required_status = "completed"
+
+[resource]
+script = ExtResource("5_g4sn7")
+npc_name = "Wojtek"
+dialogues = Array[ExtResource("1_dd35i")]([SubResource("Resource_dd35i"), SubResource("Resource_tbdkn"), SubResource("Resource_sd0ms")])

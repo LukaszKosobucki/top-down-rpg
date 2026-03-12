@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://wjndp4rhrh3q"]
+
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_3bad0"]
+[ext_resource type="Texture2D" uid="uid://cqr6eq2rjb8t1" path="res://Assets/Tiles/Interiors/1_Generic_Black_Shadow_16x16.png" id="1_g8q2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fngm"]
+atlas = ExtResource("1_g8q2e")
+region = Rect2(209.42052, 1155.3351, 14.01976, 22.622803)
+
+[resource]
+script = ExtResource("1_3bad0")
+item_name = "Apple"
+description = "Restores a small amount of HP."
+icon = SubResource("AtlasTexture_4fngm")
+max_stack = 10
+metadata/_custom_type_script = "uid://clw82yfi7agph"

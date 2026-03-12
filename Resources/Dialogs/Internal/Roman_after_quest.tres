@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://c0vj5kh02b3g1"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_p7tqj"]
+
+[resource]
+script = ExtResource("1_p7tqj")
+npc_name = "Roman"
+lines = [{
+"choices": [{
+"action": {
+"play_music": "akcja"
+},
+"next_line": 1.0,
+"text": "Tak"
+}, {
+"next_line": 8.0,
+"text": "Jesteś dla mnie za dobry."
+}],
+"text": "hmmmm transcendencja…. modularność… hmmmm Epstein.. znaczy Gauss. O cześć! gotowy na kolejną bitkę?"
+}, {
+"choices": [{
+"action": {
+"calculate_rps": true,
+"set_player_move": "Kamień"
+},
+"next_line": 2.0,
+"text": "[Kamień]"
+}, {
+"action": {
+"calculate_rps": true,
+"set_player_move": "Papier"
+},
+"next_line": 2.0,
+"text": "[Papier]"
+}, {
+"action": {
+"calculate_rps": true,
+"set_player_move": "Nożyce"
+},
+"next_line": 2.0,
+"text": "[Nożyce]"
+}],
+"text": "Aktualny wynik {roman_score}:{player_score} dla Romana. Wybierz symbol:"
+}, {
+"choices": [{
+"next_line": 3.0,
+"text": "..."
+}],
+"text": "3"
+}, {
+"choices": [{
+"next_line": 4.0,
+"text": "..."
+}],
+"text": "2"
+}, {
+"choices": [{
+"next_line": 5.0,
+"text": "..."
+}],
+"text": "1"
+}, {
+"choices": [{
+"next_line": 6.0,
+"text": "..."
+}],
+"text": "Roman: {roman_move}
+Wiktor: {player_move}"
+}, {
+"choices": [{
+"action": {
+"play_music": "akcja"
+},
+"next_line": 1.0,
+"text": "Tak!"
+}, {
+"next_line": 7.0,
+"text": "Odniosłem porażkę."
+}],
+"text": "HA! Wygrałem, to nie kwestia farta! Chcesz spróbować jeszcze raz?"
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "...."
+}],
+"text": "Wiedziałem że to powiesz."
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "... świrus."
+}],
+"text": "Wiedziałem że to powiesz."
+}]

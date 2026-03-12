@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bdyfo5bqpvd4m"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_7c3wx"]
+
+[resource]
+script = ExtResource("1_7c3wx")
+npc_name = "Straznik"
+lines = [{
+"choices": [{
+"next_line": -1.0,
+"text": "Dzięki!"
+}],
+"text": "Szukasz jabłka? Widziałem jakiegoś łobuza przy skrzyniach na wschodzie."
+}]

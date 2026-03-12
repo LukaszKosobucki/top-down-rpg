@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://wtmoupiuxvlm"]
+
+[ext_resource type="Script" uid="uid://busx8ef5nd0dg" path="res://dialogue_data.gd" id="1_n6u2r"]
+
+[resource]
+script = ExtResource("1_n6u2r")
+npc_name = "Roman"
+lines = [{
+"choices": [{
+"next_line": 2.0,
+"text": "Jo dupio, brzmi poważnie co to za eksperyment?"
+}, {
+"next_line": 1.0,
+"text": "Wiesz co, wrócę może później, jak otrzeźwiejesz."
+}],
+"text": "Cześć Wiktor, dobrze że jesteś, właśnie zastanawiałem się nad trasncendencją modularności dwojakości czasoprzestrzeni w płaszczyźnie urojonej..."
+}, {
+"choices": [{
+"next_line": -1.0,
+"text": "...."
+}],
+"text": "Wiedziałem że to powiesz."
+}, {
+"choices": [{
+"next_line": 1.0,
+"text": "Nie mam czasu na głupie gierki."
+}, {
+"action": {
+"play_music": "akcja",
+"quest_desc": "Roman twierdzi, że zna przyszłość. Muszę go pokonać w KPN.",
+"start_quest": "Eksperyment_Romana"
+},
+"next_line": 3.0,
+"text": "Podejmuje się wyzwania, nigdy nie przegrałem."
+}],
+"text": "Wiedziałem że to powiesz. Zagrajmy w kamień papier nożyce."
+}, {
+"choices": [{
+"action": {
+"calculate_rps": true,
+"set_player_move": "Kamień"
+},
+"next_line": 4.0,
+"text": "[Kamień]"
+}, {
+"action": {
+"calculate_rps": true,
+"set_player_move": "Papier"
+},
+"next_line": 4.0,
+"text": "[Papier]"
+}, {
+"action": {
+"calculate_rps": true,
+"set_player_move": "Nożyce"
+},
+"next_line": 4.0,
+"text": "[Nożyce]"
+}],
+"text": "Wiedziałem że to powiesz. Aktualny wynik {roman_score}:{player_score} dla Romana. Wybierz symbol:"
+}, {
+"choices": [{
+"next_line": 5.0,
+"text": "..."
+}],
+"text": "3"
+}, {
+"choices": [{
+"next_line": 6.0,
+"text": "..."
+}],
+"text": "2"
+}, {
+"choices": [{
+"next_line": 7.0,
+"text": "..."
+}],
+"text": "1"
+}, {
+"choices": [{
+"next_line": 8.0,
+"text": "..."
+}],
+"text": "Roman: {roman_move}
+Wiktor: {player_move}"
+}, {
+"choices": [{
+"action": {
+"play_music": "akcja"
+},
+"next_line": 3.0,
+"text": "Tak! Tym razem Cie na pewno pokonam"
+}, {
+"next_line": 9.0,
+"text": "Odnioslem porażkę."
+}],
+"text": "HA! Wygrałem, to nie kwestia farta! Chcesz spróbować jeszcze raz?"
+}, {
+"choices": [{
+"next_line": 10.0,
+"text": "Chyba jednak jesteś pijany."
+}],
+"text": "Wiedziałem że to powiesz. Sekretem jest odpowiednie stężenie kremówkozy papieskiej w organiźmie."
+}, {
+"choices": [{
+"action": {
+"add_aura": "Percepcja_Romana",
+"complete_desc": "Poznałeś tajemnicę Romana... i kremówkozy.",
+"complete_quest": "Eksperyment_Romana"
+},
+"next_line": -1.0,
+"text": "[Zamknij]"
+}],
+"text": "[Wiedza tajemna od Romana zwieksza twoją percepcję rzeczywistości, poruszasz się 50% szybciej]"
+}]
