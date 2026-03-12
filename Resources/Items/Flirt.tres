@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cow0kkk42f7m6"]
+
+[ext_resource type="Texture2D" uid="uid://o4uf23dr36f1" path="res://Assets/Tiles/Objects/flirt.png" id="1_xklg7"]
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="2_jey7h"]
+
+[resource]
+script = ExtResource("2_jey7h")
+item_name = "Flirt Tomka"
+description = "Pewnie byłby pyszny gdyby ktoś go nie rozbił..."
+icon = ExtResource("1_xklg7")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

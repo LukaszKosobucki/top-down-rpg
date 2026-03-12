@@ -14,6 +14,7 @@ script = ExtResource("1_ywjih")
 
 [node name="Button" type="Button" parent="." unique_id=1178769372]
 layout_mode = 2
+focus_mode = 0
 theme = SubResource("Theme_ywjih")
 
 [node name="Label" type="Label" parent="." unique_id=35732037]

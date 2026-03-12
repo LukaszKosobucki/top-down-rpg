@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://bk00utkigc1ea" path="res://Scenes/quest_log.gd" id="1_cb8rs"]
 [ext_resource type="Texture2D" uid="uid://cs6j1va40ptvs" path="res://Assets/UI/Modern_UI_Style_2.png" id="2_d821y"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d821y"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn7xl"]
 atlas = ExtResource("2_d821y")
 region = Rect2(495.50476, 16.14953, 17.174194, 16.473211)
@@ -26,11 +28,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_d821y")
 
 [node name="TextureButton" type="TextureButton" parent="Panel" unique_id=240014316]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
+focus_mode = 0
 texture_normal = SubResource("AtlasTexture_nn7xl")
 
 [node name="PanelContainer" type="PanelContainer" parent="Panel" unique_id=1915045180]
@@ -50,6 +54,7 @@ label_settings = SubResource("LabelSettings_d821y")
 
 [node name="CloseButton" type="TextureButton" parent="Panel/PanelContainer/VBoxContainer/HBoxContainer" unique_id=546758890]
 layout_mode = 2
+focus_mode = 0
 texture_normal = SubResource("AtlasTexture_d821y")
 
 [node name="TabContainer" type="TabContainer" parent="Panel/PanelContainer/VBoxContainer" unique_id=1973920654]

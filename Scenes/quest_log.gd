@@ -4,7 +4,7 @@ extends CanvasLayer
 @onready var log_icon = $Panel/TextureButton
 @onready var active_list = $Panel/PanelContainer/VBoxContainer/TabContainer/Aktywne/VBoxContainer
 @onready var completed_list = $Panel/PanelContainer/VBoxContainer/TabContainer/Zakończone/VBoxContainer
-
+@onready var tab_container = $Panel/PanelContainer/VBoxContainer/TabContainer
 var quest_entry_scene = preload("res://Scenes/QuestEntry.tscn")
 
 func _ready():
@@ -12,6 +12,9 @@ func _ready():
 	log_window.visible = false
 	log_icon.visible = true
 	refresh_log()
+	var tab_bar = tab_container.get_tab_bar()
+	if tab_bar:
+		tab_bar.focus_mode = Control.FOCUS_NONE
 
 func _on_texture_button_pressed():
 	log_window.visible = true

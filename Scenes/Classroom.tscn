@@ -23,6 +23,8 @@
 [ext_resource type="Resource" uid="uid://c41r7pjv3y6ts" path="res://Resources/NPC_Profiles/Lukasz_Profile.tres" id="22_3uk48"]
 [ext_resource type="Texture2D" uid="uid://vbx46y6jqivx" path="res://Assets/Characters/kaja.png" id="23_6gbkx"]
 [ext_resource type="Resource" uid="uid://duetv1snkk8qw" path="res://Resources/NPC_Profiles/Kaja_Profile.tres" id="24_5gn3j"]
+[ext_resource type="Texture2D" uid="uid://d1308ydhysw0i" path="res://Characters/Gemini_Generated_Image_2ll1nh2ll1nh2ll1.png" id="24_038c3"]
+[ext_resource type="Resource" uid="uid://qkhyvnmc5rhc" path="res://Resources/NPC_Profiles/JP_II_Profile.tres" id="25_jovjt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jjrax"]
 texture = ExtResource("2_2b2wp")
@@ -2620,6 +2622,10 @@ region = Rect2(320.4078, 7.5558167, 15.612915, 25.490456)
 atlas = ExtResource("23_6gbkx")
 region = Rect2(288.2261, 7.874443, 15.931519, 25.17183)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk1n8"]
+atlas = ExtResource("24_038c3")
+region = Rect2(975.08435, 33.18387, 865.8302, 1488.6205)
+
 [node name="Classroom" type="Node2D" unique_id=1183873535]
 script = ExtResource("1_xgqig")
 birthday_dialogue = ExtResource("2_ryp0j")
@@ -2687,3 +2693,9 @@ position = Vector2(233, 106)
 npc_texture = SubResource("AtlasTexture_57gr1")
 npc_profile = ExtResource("24_5gn3j")
 target_height = 18.0
+
+[node name="JP_II" parent="." unique_id=469253258 instance=ExtResource("9_hegpx")]
+position = Vector2(236, 61)
+scale = Vector2(1.28, 1.28)
+npc_texture = SubResource("AtlasTexture_uk1n8")
+npc_profile = ExtResource("25_jovjt")
