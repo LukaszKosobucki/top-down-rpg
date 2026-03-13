@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://1w6dt4mlcp5d"]
+
+[ext_resource type="Script" uid="uid://clw82yfi7agph" path="res://item_data.gd" id="1_c85lg"]
+[ext_resource type="Texture2D" uid="uid://blnvtd2v8v8el" path="res://Assets/Tiles/Objects/popcorn.png" id="1_ey2it"]
+
+[resource]
+script = ExtResource("1_c85lg")
+item_name = "Popcorn i folia"
+description = "Aluminium łatwo załatać dziure w paczce, bez problemu zrobisz go ponownie..."
+icon = ExtResource("1_ey2it")
+metadata/_custom_type_script = "uid://clw82yfi7agph"

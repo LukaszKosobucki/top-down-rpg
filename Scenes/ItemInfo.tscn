@@ -30,7 +30,7 @@ layout_mode = 2
 
 [node name="InfoIcon" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=279518734]
 clip_contents = true
-custom_minimum_size = Vector2(16, 16)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 expand_mode = 1
 
